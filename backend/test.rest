@@ -1,0 +1,33 @@
+GET http://localhost:3000/Users/id/test
+
+###
+
+GET http://localhost:3000/search
+
+###
+
+GET http://localhost:3000/search/1.test
+
+###
+
+post http://localhost:3000/search
+content-type: application/json
+
+{
+    "search":"hoordloppen",
+    "user_Id":5
+}
+
+###
+
+post http://localhost:3000/Users
+content-type: application/json
+
+{
+    "name":"test"
+}
+
+###
+
+GET http://localhost:3000/article/howest%20mct
+
